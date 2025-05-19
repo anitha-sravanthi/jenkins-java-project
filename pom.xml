@@ -10,11 +10,7 @@
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
-		<!-- Add the Java version here -->
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>	
-	
 	<dependencies>
 		<dependency>
 		    <groupId>com.oracle.bedrock</groupId>
@@ -28,6 +24,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 	
 	<distributionManagement>
@@ -50,17 +47,5 @@
 	    </pluginRepository>
 	</pluginRepositories>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version> <!-- Ensure you use a modern version -->
-				<configuration>
-					<source>1.8</source>  <!-- Use Java 8 -->
-					<target>1.8</target>  <!-- Use Java 8 -->
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	
 </project>
